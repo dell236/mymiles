@@ -6,7 +6,7 @@ import android.content.*;
 import android.content.pm.PackageManager;
 import android.location.*;
 import android.os.*;
-import androidx.annotation.Nullable;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -156,5 +156,5 @@ public class MileageTrackingService extends Service implements LocationListener 
         }
     }
 
-    @Nullable @Override public IBinder onBind(Intent intent) { return null; }
+   @Override public IBinder onBind(Intent intent) { return null; }
 }
