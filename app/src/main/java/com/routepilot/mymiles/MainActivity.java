@@ -269,7 +269,7 @@ public class MainActivity extends Activity {
                         .append(q(r.optString("endOdo"))).append(',')
                         .append(r.optInt("accepted")).append(',')
                         .append(r.optInt("rejected")).append(',')
-                        .append(q(r.optString("notes"))).append('\\n');
+                        .append(q(r.optString("notes"))).append('\n');
             }
             Intent send = new Intent(Intent.ACTION_SEND);
             send.setType("text/csv");
